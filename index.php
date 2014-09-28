@@ -9,28 +9,28 @@
     </head>
     <body>
 
-    <?php 
+        <?php
         $data = array(
             array(
                 'Name' => 'Trixie',
                 'Color' => 'Green',
                 'Element' => 'Earth',
                 'Likes' => 'Flowers'
-                ),
+            ),
             array(
                 'Name' => 'Tinkerbell',
                 'Element' => 'Air',
                 'Likes' => 'Singning',
                 'Color' => 'Blue'
-                ), 
+            ),
             array(
                 'Element' => 'Water',
                 'Likes' => 'Dancing',
                 'Name' => 'Blum',
                 'Color' => 'Pink'
-                ),
+            ),
         );
-    ?>
+        ?>
 
         <div id="content">
             <table>
@@ -43,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($data as $row){ ?>
+                    <?php foreach ($data as $row) { ?>
                         <tr style="background-color: <?php echo $row['Color']; ?>;">
                             <td><?php echo $row['Name']; ?></td>
                             <td><?php echo $row['Color']; ?></td> 
